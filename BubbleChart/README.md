@@ -28,10 +28,11 @@ Data Sources
 
 Aesthetics
 * Colorize bubbles based on word values
-* Apply transitions 
+* Apply transitions
+* Apply forced layout 
 
 Besides these 2 core objectives I did however encounter "challenges" along the way and have decided to also walk through thier discovery and resolution as well:
 
-#Core Functionality
+##Core Functionality
 
 
