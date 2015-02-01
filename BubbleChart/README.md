@@ -1,2 +1,2 @@
 ###Creating a Bubble Chart
-Finding the right layout to visually display the data can be a bit challenging at times. D3 does provide several [layouts](https://github.com/mbostock/d3/wiki/Layouts)
+D3 provides several [layouts](https://github.com/mbostock/d3/wiki/Layouts) that can be used to display data.  Let's work through creating a Bubble Chart using the [Pack](https://github.com/mbostock/d3/wiki/Pack-Layout) layout.
