@@ -2,7 +2,7 @@
 D3 provides several [layouts](https://github.com/mbostock/d3/wiki/Layouts) that can be used to display data.  Let's work through creating a Bubble Chart using the [Pack](https://github.com/mbostock/d3/wiki/Pack-Layout) layout. There are several awsome examples on using this layout so take a minute to review some of the follow links to get a better idea:
 
 Mike Bostok
-* [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0
+* [Four Ways to Slice Obama’s 2013 Budget Proposal] (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0)
 
 #Getting Started
 
