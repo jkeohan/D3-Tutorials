@@ -1,8 +1,8 @@
 #Creating a Bubble Chart
 D3 provides several [layouts](https://github.com/mbostock/d3/wiki/Layouts) that can be used to display data.  Let's work through creating a Bubble Chart using the [Pack](https://github.com/mbostock/d3/wiki/Pack-Layout) layout. There are several awsome examples on using this layout so take a minute to review some of the follow links to get a better idea:
 
-* [Four Ways to Slice Obama’s 2013 Budget Proposal] by Mike Bostok (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0)
-* [At the Republican Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/08/28/us/politics/convention-word-counts.html)
+* [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0) by Mike Bostock 
+* [At the Republican Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/08/28/us/politics/convention-word-counts.html) by Mike Bostock
 * Additional examples
 
 ##Getting Started
