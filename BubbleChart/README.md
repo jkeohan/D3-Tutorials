@@ -23,15 +23,14 @@ Data Sources
 * Import json data stored as variable within the d3 script
 * Use the d3.json [Convinience Method](https://github.com/mbostock/d3/wiki/Requests#d3_json) AJAX call to pull in the json data from external file
 * Live data pull using the Random Thoughts API
+* Challenges
+  * Dealing with words that exceeded circle radius
 
 Aesthetics
 * Colorize bubbles based on word values
 * Apply transitions 
 
 Besides these 2 core objectives I did however encounter "challenges" along the way and have decided to also walk through thier discovery and resolution as well:
-
-Challenges
-* Certain words longer than circle radius
 
 #Core Functionality
 
