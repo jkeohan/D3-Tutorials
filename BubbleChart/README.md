@@ -2,6 +2,7 @@
 D3 provides several [layouts](https://github.com/mbostock/d3/wiki/Layouts) that can be used to display data.  Let's work through creating a Bubble Chart using the [Pack](https://github.com/mbostock/d3/wiki/Pack-Layout) layout. There are several awsome examples on using this layout so take a minute to review some of the follow links to get a better idea:
 
 * [Four Ways to Slice Obama’s 2013 Budget Proposal] by Mike Bostok (http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0)
+* [At the Republican Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/08/28/us/politics/convention-word-counts.html)
 * Additional examples
 
 ##Getting Started
@@ -11,7 +12,7 @@ As always the most practical and tangible way to learn how to build any chart is
 * [Use D3 Component Layouts](http://www.ibm.com/developerworks/library/os-dataviz2/)
 * [Fun with D3](http://www.developer.com/java/fun-with-d3.js-data-visualization-eye-candy-with-streaming-json.html)
 
-#Project Goals
+##Project Goals
 
 I decided to break down the project goals as follows in order and maintain consistent and forward progress, which works wonders for the ego, and to keep the learning curve down to a minimum.  It's always best to implement the core functionality and then build on that until you have a finished product.  I also decided to break it down into the following categories: 
 
@@ -33,4 +34,5 @@ Challenges
 * Certain words longer than circle radius
 
 #Core Functionality
+
 
