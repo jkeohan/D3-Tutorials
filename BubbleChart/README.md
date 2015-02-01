@@ -11,3 +11,26 @@ As always the most practical and tangible way to learn how to build any chart is
 * [Use D3 Component Layouts](http://www.ibm.com/developerworks/library/os-dataviz2/)
 * [Fun with D3](http://www.developer.com/java/fun-with-d3.js-data-visualization-eye-candy-with-streaming-json.html)
 
+#Project Goals
+
+I decided to break down the project goals as follows in order and maintain consistent and forward progress, which works wonders for the ego, and to keep the learning curve down to a minimum.  It's always best to implement the core functionality and then build on that until you have a finished product.  I also decided to break it down into the following categories: 
+
+Core Functionality
+* Create a Bubble chart template 
+
+Data Sources
+* Import json data stored as variable within the d3 script
+* Use the d3.json [Convinience Method](https://github.com/mbostock/d3/wiki/Requests#d3_json) AJAX call to pull in the json data from external file
+* Live data pull using the Random Thoughts API
+
+Aesthetics
+* Colorize bubbles based on word values
+* Apply transitions 
+
+Besides these 2 core objectives I did however encounter "challenges" along the way and have decided to also walk through thier discovery and resolution as well:
+
+Challenges
+* Certain words longer than circle radius
+
+#Core Functionality
+
