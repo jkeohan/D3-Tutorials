@@ -51,7 +51,7 @@ function drawBubbleChart(root){
     var width = 200;
         height = 400;
     var color = d3.scale.category20c();
-    var bubble = d3.layout.pack().size([300,300]).padding(1.5).value( function(d) { return d.size})
+    var bubble = d3.layout.pack().size([310,310]).padding(1.5).value( function(d) { return d.size})
     var svg = d3.select("body").select(".bubbles")
       .append("svg")
       .attr("width",300)
