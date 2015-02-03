@@ -1,0 +1,46 @@
+var thought = {
+  "thoughts" : [
+    {"word" : "love",
+    "count": 100
+    },
+
+    {"word" : "you",
+    "count": 80
+    },
+
+    {"word" : "as",
+    "count": 60
+    },
+
+    {"word" : "much",
+    "count" : 40
+    },
+     {"word" : "about",
+    "count": 100
+    },
+
+    {"word" : "friends",
+    "count": 80
+    },
+
+    {"word" : "run",
+    "count": 60
+    },
+
+    {"word" : "away",
+    "count" : 11
+    },
+
+    {"word" : "carefree",
+    "count": 10
+    },
+
+    {"word" : "appalacian",
+    "count": 2
+    },
+
+    {"word" : "hypocritical",
+    "count" : 3
+    }
+  ]
+}
