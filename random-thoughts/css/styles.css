@@ -57,3 +57,48 @@ border-radius: 240px / 140px;
     /* reduce the damage in FF3.0 */
     display:block; 
 }
+
+.oval-thought-border.middle:before {
+	right:150px; 
+}
+
+.oval-thought-border.middle:after {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	bottom:-80px; 
+	right:163px; 
+	width:25px; 
+	height:25px; 
+	border:10px solid #97ccf1;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
+
+
+.oval-thought-border.left:before {
+	right:200px; 
+}
+
+.oval-thought-border.left:after {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	bottom:-60px; 
+	right:270px; 
+	width:25px; 
+	height:25px; 
+	border:10px solid #97ccf1;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
