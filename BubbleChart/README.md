@@ -24,7 +24,7 @@ Data Sources
 * Use the d3.json [Convinience Method](https://github.com/mbostock/d3/wiki/Requests#d3_json) AJAX call to pull in the json data from external file
 * Live data pull using the Random Thoughts API
 
-Aesthetics
+Animation and Aesthetics
 * Colorize bubbles based on word values
 * Apply transitions
 * Apply forced layout 
