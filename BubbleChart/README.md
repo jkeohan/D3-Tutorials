@@ -3,7 +3,7 @@ D3 provides several [layouts](https://github.com/mbostock/d3/wiki/Layouts) that 
 
 * [Four Ways to Slice Obama’s 2013 Budget Proposal](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html?_r=0) by Mike Bostock 
 * [At the Republican Convention, the Words Being Used](http://www.nytimes.com/interactive/2012/08/28/us/politics/convention-word-counts.html) by Mike Bostock
-* Additional examples
+* [Bubble Chart Prototype](http://bl.ocks.org/mbostock/4063269) by Mike Bostock
 
 ##Getting Started
 
