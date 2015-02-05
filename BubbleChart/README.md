@@ -14,7 +14,7 @@ As always the most practical and tangible way to learn how to build any chart is
 
 ##Project Goals
 
-I decided to break down the project goals as follows:
+I decided to break down the project into the following categories:
 
 Core Functionality
 * Create a Bubble chart template 
