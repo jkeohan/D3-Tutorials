@@ -33,5 +33,5 @@ Animation and Aesthetics
 Besides these 2 core objectives I did however encounter "challenges" along the way and have decided to also walk through thier discovery and resolution as well:
 
 ##Core Functionality
-
-
+pack.value(value)
+If value is specified, sets the value accessor to the specified function. If value is not specified, returns the current value accessor, which assumes that the input data is an object with a numeric value attribute:
