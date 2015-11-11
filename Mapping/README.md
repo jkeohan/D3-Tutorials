@@ -34,8 +34,8 @@ You may first need to install Homebrew and it's as easy as following the instuct
 
 ***Converting Data
 The two JSON formats that will be needed to render the map and points of interest are:
-* TopoJSON
 * [GeoJSON](http://geojson.org)
+* [TopoJSON](https://github.com/mbostock/topojson)
 
 GeoJSON
 A specific JSON format for describing geographical data structures and contains all information to draw geographic data.  This data format is also required by the d3.geo.path function to create a polygon using an SVG path.
