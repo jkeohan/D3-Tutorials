@@ -24,11 +24,11 @@ The two tools we will need to manipulate the Natural Earth datasets are:
 * [GDAL](http://www.gdal.org/)...which includes the ogr2ogr binaries
 
 Run the following commands to install the tools and verify thier successful installation:
-* brew install node
-* bew install gdal
-* npm install -g topojson
-* which ogr2ogr
-* which topojson
+* brew install node //installs node
+* brew install gdal //installs gdal
+* npm install -g topojson //installs topojson
+* which ogr2ogr //verify ogr2ogr install
+* which topojson  ////verify topojson install
 
 You may first need to install Homebrew and it's as easy as following the instuctions [here](http://thechangelog.com/install-node-js-with-homebrew-on-os-x/).  I didn't install it but it's quite possible that it was installed as part of the General Assembly setup script.  I'll have to follow up to confirm. 
 
