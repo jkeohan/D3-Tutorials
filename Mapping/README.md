@@ -46,3 +46,7 @@ Removes duplicate borders defined by GeoJSON which can reduce the file size by 8
 * topojson.js (JS Library) - used by d3 to convert TopoJSON-serialied format back to GeoJSON so that the d3.geo.path functions work correctly. 
 
 Once the tools have been installed we can now create a single TopoJSON file by merging the Admin 0 and Populated Places shapefiles.  
+
+References
+* [Interactive Data Virtualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/ch12.html)
+* [Interactive Map with D3.js](http://www.tnoda.com/blog/2013-12-07)
