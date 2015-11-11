@@ -1,6 +1,6 @@
 #D3 Mapping
 
-This module will focus on learning mapping fundamentals and how to create a world map with points of interest.  It is more of a synopsis of Mike Bostock's tutorial ["Let's Make A Map"](http://bost.ocks.org/mike/map/) so i urge that you give it thorough reading as this tutorial will not do it justice.  I was also reading "Learning D3.js Mapping" by Thomas Newton and Oscar Villarreal during this time so I'll be sure to include quite a few references from there as well. 
+This module will focus on learning mapping fundamentals and how to create a world map with points of interest.  It is more of a synopsis of Mike Bostock's tutorial ["Let's Make A Map"](http://bost.ocks.org/mike/map/) so i urge that you give it thorough reading as this tutorial will not do it justice.  I was also reading "Learning D3.js Mapping" by Thomas Newton and Oscar Villarreal during this time and will incorporate that content as well. 
 
 Once completed it will look similiar to this:
 
