@@ -12,7 +12,7 @@ We will cover the following:
 
 ###Finding Data
 
-Mike states that [Natural Earth](http://www.naturalearthdata.com/ is the most convenient source of free geographic data so we'll follow his lead and use two 1:1e7...NOTE: discuss what is 1:1e7....  Natural Earth datasets which are included in this tutorial:
+Mike states that [Natural Earth](http://www.naturalearthdata.com/ is the most convenient source of free geographic data so we'll follow his lead and use Natural Earth datasets scaled @ 1:10,000,000 and are included in this tutorial:
 * Admin 0 - Details - map subunits - Includes country polygons
 * Populated Places - Names and locations of populated places
 
