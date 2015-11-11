@@ -35,7 +35,7 @@ My first intro to creating maps was after reading "Let's Make A Map" and there w
 
 So the easiest way to convert .shp files into geoJOSN is to use [mapshaper.org](http://mapshaper.org/).  This requires uploading two files:  .shp and .dbf.  Clicking on the export button with then download the conveted .json file 
 
-[![GeoJSON](https://github.com/jkeohan/D3-Tutorials/edit/master/Mapping/Images/geojson.png)
+[![GeoJSON](https://github.com/jkeohan/D3-Tutorials/edit/master/Mapping/Images/geojson.png)]
 
 
 ###Converting shp file to TopoJSON
