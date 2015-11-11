@@ -51,3 +51,4 @@ References
 * [Interactive Data Virtualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345/ch12.html)
 * [Interactive Map with D3.js](http://www.tnoda.com/blog/2013-12-07)
 * [Mapshaper](http://mapshaper.org/)
+* [Let's Make A Map](http://bost.ocks.org/mike/map/)
