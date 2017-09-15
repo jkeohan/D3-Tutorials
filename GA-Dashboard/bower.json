@@ -1,0 +1,16 @@
+{
+  "name": "GA-Dashboard",
+  "homepage": "https://github.com/jkeohan/D3-Tutorials",
+  "authors": [
+    "Joe Keohah <jkeohan@gmail.com>"
+  ],
+  "description": "Client dashboard",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
