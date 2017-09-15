@@ -1,5 +1,8 @@
 ### D3-React
 
+Initially after writing the code in the tutorial I ran into the following errors:
+
+This one was easy enough to fix and was only missing an expression {} in JSX.
 ```
 ./src/components/Alphabet.js
 Syntax error: JSX value should be either an expression or a quoted JSX text (25:41)
@@ -15,7 +18,7 @@ Syntax error: JSX value should be either an expression or a quoted JSX text (25:
 
 
 
-
+Another simple one to fix.  The property is fillOpacity and not fill-opacity. 
 ```
 ./src/components/Letter.js
 Syntax error: Unexpected token, expected , (24:32)
@@ -30,14 +33,14 @@ Syntax error: Unexpected token, expected , (24:32)
 ```
 
 
-After syntax errors have been addressed this was the next error. This was a typo during the import of the group where I had called TransitionGroup and not ReactTransitionGroup
+After the obvious syntax errors have been addressed I encountered the another logic error during the import of the group where I had called TransitionGroup and not ReactTransitionGroup
 ```
 ./src/components/Alphabet.js
   Line 23:  'ReactTransitionGroup' is not defined  react/jsx-no-undef
 ```
 
 
-THere was one more syntax error in the misspelling of `transition` and then the page loaded...however nothing appeared...Developer Tools showed the following error:
+There was one more syntax error in the misspelling of `transition` and then the page loaded...however nothing appeared...Developer Tools showed the following error:
 
 ```
 proxyConsole.js:56 Warning: Unknown prop `transfrom` on <g> tag. Remove this prop from the element. For details, see https://fb.me/react-unknown-prop
@@ -49,6 +52,22 @@ proxyConsole.js:56 Warning: Unknown prop `transfrom` on <g> tag. Remove this pro
 ```
 
 
-Finally with all errors resolved the page still displayed nothing...It's clear that the letters are being drawn as I can see the elements but console logging the this.state in componentWillMount in Alphabet.js displays and empty array.
+Finally with all errors resolved the page still displayed nothing...It's clear that the inital letters are being drawn as I can see the elements in the elements tab but console logging this.state in componentWillMount in Alphabet.js displays and empty array.
 
-Adding a console.log in render() to show the alphabet array show that the d3.interval is running but crazy fast and not at the speed defined.  This was due to a typo in where i put the closing {} for d3.interval.  Once that was done I could see it running at the pace it should, however still no letters. 
+Adding a console.log in render() to show the alphabet array show that the d3.interval is running but crazy fast and not at the speed defined.  This was due to yet another typo in where i put the closing {} for d3.interval.  Once that was done I could see it running at the pace it should, however still no letters being displayed on the page.  
+
+Ok...So I have to admit...I can't type for shit.  After the slew of errors I finally figured out the issue...and guess what...it was another typo.  In the render() method of Letter I had typed `ref=leffer` instead of `ref=letter`.  
+
+```
+  return (
+      <text dy=".35em" x={x} y={y} style={
+        {fillOpacity: fillOpacity,fill: color, font: 'bold 48px monospace'}}
+        ref="leffer">
+        {this.props.letter}
+      </text>
+    );
+```
+
+### References
+
+- [React Animations by Joe Morgan](http://www.thejoemorgan.com/blog/2016/09/23/react-animations/)

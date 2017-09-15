@@ -24,6 +24,7 @@ class Letter extends Component {
       .attr('y',0).style('fill-opacity',1)
       .on('end', () => {
         this.setState({y:0, fillOpacity:1, color:UpdateColor});
+        console.log("inside compWillEnter .on(end) x", this.state.x)
         callback()
       })
   }
@@ -42,7 +43,7 @@ class Letter extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("inside compWillReceiveProps ", nextProps)
+    // console.log("inside compWillReceiveProps ", nextProps)
     if(this.props.i !== nextProps.i) {
       //console.log("inside compWillReceiveProps nextProps", nextProps)
       // the above cl confirms data is changing 
@@ -52,7 +53,7 @@ class Letter extends Component {
         .attr('x', nextProps.i*32)
         .on('end', () => {
            this.setState({x: nextProps.i*32})
-           console.log("inside end x", this.state.x)
+           console.log("inside willReceiveeProps .on(end) x", this.state.x)
         })
     }
   }
@@ -63,7 +64,7 @@ class Letter extends Component {
     return (
       <text dy=".35em" x={x} y={y} style={
         {fillOpacity: fillOpacity,fill: color, font: 'bold 48px monospace'}}
-        ref="leffer">
+        ref="letter">
         {this.props.letter}
       </text>
     );
