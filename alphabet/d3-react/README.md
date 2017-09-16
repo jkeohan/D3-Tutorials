@@ -56,7 +56,7 @@ Finally with all errors resolved the page still displayed nothing...It's clear t
 
 Adding a console.log in render() to show the alphabet array show that the d3.interval is running but crazy fast and not at the speed defined.  This was due to yet another typo in where i put the closing {} for d3.interval.  Once that was done I could see it running at the pace it should, however still no letters being displayed on the page.  
 
-Ok...So I have to admit...I can't type for shit.  After the slew of errors I finally figured out the issue...and guess what...it was another typo.  In the render() method of Letter I had typed `ref=leffer` instead of `ref=letter`.  
+Ok...So I have to admit...I can't type for shit.  After the slew of errors I found myself getting closer to resolving the issue...and guess what...it was yet another typo.  In the render() method of Letter I had typed `ref=leffer` instead of `ref=letter`.  
 
 ```
   return (
@@ -67,6 +67,47 @@ Ok...So I have to admit...I can't type for shit.  After the slew of errors I fin
       </text>
     );
 ```
+
+This however didn't fully resolve the issue as the only property updating via the Elements tab was the `x` coordinate.  The letters still did not appear on the screen.
+
+Back to the drawing board...or better yet...another round of google searches...Now since I'm not familiar with ReactTransitionGroup I decided to start there and after a few sites came across the same article by Swizec callsed [using-d3js-transitions-in-react](https://swizec.com/blog/using-d3js-transitions-in-react/swizec/6797). The first thing I noticed was that he was importing `react-addons-transition-group` instead of `react-transition-group/TransitionGroup`, which was how he referenced it in his book.  So I updated the code to include the following and low and behold the letters appeared on the screen.  
+
+```
+import ReactTransitionGroup from 'react-addons-transition-group' 
+```
+
+Sometimes I think the JavaScript gods are either challenging my patience or ability to troubleshoot as for a brief moment the letters appeared to drop into position and change colors but then the site erred out with the following:
+
+```
+×
+←→1 of 5 errors on the page
+Error: too late
+▶ 6 stack frames were collapsed.
+Letter.componentWillLeave
+src/components/Letter.js:36
+  33 | let node = d3.select(this.refs.letter);
+  34 | this.setState({color: ExitColor});
+  35 | 
+> 36 | node.transition(this.transition)
+  37 |   .attr('y',60).style('fill-opacity',1e-6)
+  38 |   .on('end', () => {
+  39 |     this.setState({y: 60, fillOpacity: 1e-6});
+View compiled
+▶ 2 stack frames were collapsed.
+SVGTextElement.<anonymous>
+src/components/Letter.js:27
+  24 |     .attr('y',0).style('fill-opacity',1)
+  25 |     .on('end', () => {
+  26 |       this.setState({y:0, fillOpacity:1, color:UpdateColor});
+> 27 |       callback()
+  28 |     })
+  29 | }
+  30 | 
+View compiled
+▶ 4 stack frames were collapsed.
+```
+
+One thing I've come across in the past when troubleshooting transitions was that one transition would execute too soon or too late and that would cause unexpected results.  Now during my initial troubleshooting I changed the speed of set d3.interval from `1500` to `500` so I changed it back and everything worked as expected. 
 
 ### References
 

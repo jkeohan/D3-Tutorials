@@ -24,7 +24,6 @@ class Letter extends Component {
       .attr('y',0).style('fill-opacity',1)
       .on('end', () => {
         this.setState({y:0, fillOpacity:1, color:UpdateColor});
-        console.log("inside compWillEnter .on(end) x", this.state.x)
         callback()
       })
   }

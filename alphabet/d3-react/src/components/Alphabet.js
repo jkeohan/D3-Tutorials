@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import ReactTransitionGroup from 'react-transition-group/TransitionGroup';
+// import ReactTransitionGroup from 'react-transition-group/TransitionGroup';
+// below is whats in the official react docs
+import ReactTransitionGroup from 'react-addons-transition-group' 
 import * as d3 from 'd3';
 
 import Letter from './Letter';
 
 class Alphabet extends Component {
-  static letters = "abc".split('');
+  static letters = "abcdefghijklmnopqrstuvwxyz".split('');
   state = {alphabet: []};
 
   componentWillMount() {
@@ -15,7 +17,7 @@ class Alphabet extends Component {
        alphabet: d3.shuffle(Alphabet.letters)
         .slice(0,Math.floor(Math.random() * Alphabet.letters.length))
         .sort()
-      })},500); 
+      })},1500); 
   }
 
   render() {
