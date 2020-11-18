@@ -11,7 +11,7 @@ The following content will be covered: w
 * Converting shp files to GeoJSON
 * Converting shp files to TopoJSON
 
-###Finding Data
+### Finding Data
 
 Mike states that [Natural Earth](http://www.naturalearthdata.com/ is the most convenient source of free geographic data so we'll follow his lead and use Natural Earth datasets scaled @ 1:10,000,000 and are included in this tutorial:
 * Admin 0 - Details - map subunits - Includes country polygons
@@ -30,14 +30,15 @@ Removes duplicate borders defined by GeoJSON which can reduce the file size by 8
 * Command line utilty (topojson) - used to create TopoJSON files from shapefiles
 * topojson.js (JS Library) - used by d3 to convert TopoJSON-serialied format back to GeoJSON so that the d3.geo.path functions work correctly. 
 
-***Converting shp files to GeoJSON
+***Converting shp files to GeoJSON***
+
 My first intro to creating maps was after reading "Let's Make A Map" and there were many more steps in converting an shp file to TopoJSON.  The tutorial also demo'd how filter the data set to include only a handful of countries as well as merge 2 shp files. Although I will be covering those steps in the next section I thought it's worth noting that after taking Scott Murray's course discovered a much easier way to convert .shp to .json.  
 
 So the easiest way to convert .shp files into geoJOSN is to use [mapshaper.org](http://mapshaper.org/).  This requires uploading two files:  .shp and .dbf.  Clicking on the export button with then download the conveted .json file 
 
 [![GeoJSON](https://github.com/jkeohan/D3-Tutorials/tree/master/Mapping/raw/master/Images/geojson.png)]
 
-###Converting shp file to TopoJSON
+## #Converting shp file to TopoJSON
 The two tools we will need to convet the .shp files to TopoJSON are:
 * NODE
 * [Homebrew](http://brew.sh/) 
