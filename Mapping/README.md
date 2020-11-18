@@ -1,4 +1,4 @@
-#D3 Mapping
+# D3 Mapping
 
 This module will focus on learning mapping fundamentals as well as how to create a world map with points of interest. I've reviewed quite a bit of content while putting together this tutorial which included the following:
 * Mike Bostock's tutorial ["Let's Make A Map"](http://bost.ocks.org/mike/map/) 
@@ -17,7 +17,7 @@ Mike states that [Natural Earth](http://www.naturalearthdata.com/ is the most co
 * Admin 0 - Details - map subunits - Includes country polygons
 * Populated Places - Names and locations of populated places
 
-###What is GeoJSON & TopoJSON
+### What is GeoJSON & TopoJSON
 The two JSON formats that can be used to render the map and points of interest are:
 * [GeoJSON](http://geojson.org)
 * [TopoJSON](https://github.com/mbostock/topojson)
